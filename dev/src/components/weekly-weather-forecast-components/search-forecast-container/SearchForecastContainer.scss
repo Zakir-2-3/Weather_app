@@ -1,0 +1,104 @@
+.search-forecast__container {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 10px 0;
+}
+
+.main-input__container {
+  padding: 2px;
+  width: 100%;
+  gap: 10px 0;
+  height: 33px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgba(204, 204, 204, 0.1098039216);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  & button {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s ease;
+    -webkit-transition: background 0.2s ease;
+    -moz-transition: background 0.2s ease;
+    -ms-transition: background 0.2s ease;
+    -o-transition: background 0.2s ease;
+  }
+  & button:nth-child(1) {
+    border-right: 1px solid rgba(204, 204, 204, 0.1098039216);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding-right: 2px;
+    width: 38px;
+    &:hover {
+      background-color: rgb(210 209 209 / 20%);
+      border-right: 1px solid transparent;
+    }
+  }
+  & button:nth-child(3) {
+    border-left: 1px solid rgba(204, 204, 204, 0.1098039216);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding-left: 2px;
+    width: 38px;
+    &:hover {
+      background-color: rgb(210 209 209 / 20%);
+      border-left: 1px solid transparent;
+    }
+  }
+  & button:nth-child(1) > svg,
+  button:nth-child(3) > img {
+    width: 18px;
+  }
+  & input {
+    width: 100%;
+    font-size: 15px;
+    padding: 0 5px;
+  }
+}
+
+.coordinates-input__container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  gap: 0px 10px;
+  width: 100%;
+  & .coordinates-input {
+    font-size: 16px;
+    padding: 0 8px;
+    width: 100%;
+    height: 33px;
+    line-height: 7;
+    border: 1px solid rgba(204, 204, 204, 0.1098039216);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+}
+
+input,
+button {
+  border: none;
+  background-color: transparent;
+  color: inherit;
+  outline: none;
+}
+
+::placeholder {
+  color: #ffffffc4;
+  font-size: 14px;
+}
